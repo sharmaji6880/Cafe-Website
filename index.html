@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>A Web Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--=====HEADER======-->
+    <header>
+      <div class="logo">
+        <a href="#"><i class="bx bxs-coffee"></i>The Cafe</a>
+      </div>
+
+      <nav class="navbar">
+        <a href="#homecontainer" class="nav_link active">Home</a>
+        <a href="#menu" class="nav_link ">Menu</a>
+        <a href="#order" class="nav_link ">Order</a>
+        <a href="#contact" class="nav_link">Contact</a>
+      </nav>
+    </header>
+
+    <div id="main">
+      <!--====HOME====-->
+      
+      <div id="homecontainer">
+        <section id="home_img">
+          <img src="home_background.jpg" alt="">
+        </section>
+        <div id="home_content">
+          <div class="section_title">
+            <div>The</div>
+            <div>Cafe</div>
+          </div>
+
+          <div class="section_content">
+            <div class="section_quote">
+              <div><span>"</span> Count</div>
+              <div>Memories</div>
+              <div>Not</div>
+              <div>Calories <span>"</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--====MENU====-->
+
+      <section id="menu">
+        <div class="section_title">Menu</div>
+        <div class="section_content">
+          <div class="menu_item" id="item1">
+            <img src="pasta.jpg" title="Pasta" /> <span>Pasta Rs 225</span>
+          </div>
+          <div class="menu_item" id="item2">
+            <img src="mushroom.jpeg" /> <span>Mushroom Rs 385</span>
+          </div>
+          <div class="menu_item" id="item3">
+            <img src="pizza.jpg" /> <span>Pizza Rs 545</span>
+          </div>
+          <div class="menu_item" id="item4">
+            <img src="fries.jpeg" /> <span>Fries Rs 180</span>
+          </div>
+          <div class="menu_item" id="item5">
+            <img src="salad.jpg" /> <span>Salad Rs 325</span>
+          </div>
+          <div class="menu_item" id="item6">
+            <img src="rizotto.jpg" /> <span>Rizotto Rs 360</span>
+          </div>
+          <div class="menu_item" id="item7">
+            <img src="frappe.jpg" /> <span>Frappe Rs 220</span>
+          </div>
+          <div class="menu_item" id="item8">
+            <img src="mocha.jpg" /> <span>Mocha Rs 300</span>
+          </div>
+          <div class="menu_item" id="item9">
+            <img src="latte.jpg" /> <span>Latte Rs 350</span>
+          </div>
+        </div>
+      </section>
+
+      <!--====ORDER====-->
+      <section id="order">
+        <div class="section_title">Order</div>
+        <form action="backend_logic.js">
+          <input type="text" placeholder="Firstname" />
+          <input type="text" placeholder="Lastname" />
+          <input type="text" placeholder="Mobile" />
+          <input type="text" placeholder="Address" />
+          <input type="text" placeholder="Item" />
+
+          <input type="submit" value="Place Order" />
+        </form>
+      </section>
+
+      <!--====CONTACT====-->
+
+      <section id="contact">
+        <div class="section_title">Contact</div>
+
+        <div class="social_media">
+          <div class="instagram">
+            <div class="icon"><i class="bx bxl-instagram"> </i></div>
+            <div class="handle"><a href="#">Instagram</a></div>
+          </div>
+          <div class="facebook">
+            <div class="icon"><i class="bx bxl-facebook-circle"></i></div>
+            <div class="handle"><a href="#">Facebook</a></div>
+          </div>
+          <div class="twitter">
+            <div class="icon"><i class="bx bxl-twitter"></i></div>
+            <div class="handle"><a href="#">Twitter</a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="logic.js"></script>
+  </body>
+</html>
